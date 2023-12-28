@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: $black;
+
+    font-family: $font-main;
+    color: $white;
+}
+
+a {
+    color: $white;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.wrapper {
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1198px;
+    margin: 0 auto;
+}
+
