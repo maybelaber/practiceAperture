@@ -1,0 +1,64 @@
+.card {
+    display: inline-block;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.card__img {
+    transition: all 0.2s ease-in;
+}
+
+.card:hover .card__img {
+    transform: scale(1.1);
+}
+
+.card__content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 45px;
+}
+
+.card__title {
+    color: $white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin: 0 0 10px 0;
+}
+
+.card__text {
+    color: $muted;
+    font-size: 14px;
+    line-height: 142.857%;
+
+    margin: 0 0 12px 0;
+}
+
+.card__btn {
+    padding: 8px 10px 8px 42px;
+
+    position: relative;
+
+    color: $black;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+
+    background-color: $white;
+    border-radius: 14px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 4px;
+        left: 4px;
+
+        width: 32px;
+        height: 32px;
+        
+        background-image: url('./../img/cards/icon.svg');
+    }
+}

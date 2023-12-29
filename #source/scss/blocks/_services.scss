@@ -1,0 +1,25 @@
+.services {
+    padding: 110px 0 100px;
+}
+
+.services__title {
+    margin: 0 0 15px 0;
+}
+
+.services__text {
+    color: #C0C0C0;
+    text-align: center;
+    font-size: 23px;
+
+    margin: 0 0 42px 0;
+}
+
+.services__cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    
+    //grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); // for adaptive
+
+    gap: 16px;
+}

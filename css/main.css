@@ -151,6 +151,12 @@ a:hover {
   text-align: center;
 }
 
+.title-2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 105%;
+}
+
 .header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -264,4 +270,85 @@ a:hover {
 
 .companty-info__loc-text {
   font-size: 12px;
+}
+
+.services {
+  padding: 110px 0 100px;
+}
+
+.services__title {
+  margin: 0 0 15px 0;
+}
+
+.services__text {
+  color: #C0C0C0;
+  text-align: center;
+  font-size: 23px;
+  margin: 0 0 42px 0;
+}
+
+.services__cards {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover .card__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card__content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 45px;
+}
+
+.card__title {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.card__text {
+  color: #C0C0C0;
+  font-size: 14px;
+  line-height: 142.857%;
+  margin: 0 0 12px 0;
+}
+
+.card__btn {
+  padding: 8px 10px 8px 42px;
+  position: relative;
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+.card__btn::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+  background-image: url("./../img/cards/icon.svg");
 }
