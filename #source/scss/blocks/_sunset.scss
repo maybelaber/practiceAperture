@@ -1,0 +1,26 @@
+.sunset {
+    padding: 40px 35px;
+
+    background: url('./../img/sunset/sunset-bg.jpg') center / cover no-repeat;
+    min-height: 600px;
+
+    display: grid;
+    justify-content: end;
+    align-items: end;
+}
+
+.sunset__location {
+    justify-self: end;
+}
+
+.sunset__title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sunset__text {
+    color: $muted;
+    font-size: 14px;
+    line-height: 142.857%;
+}

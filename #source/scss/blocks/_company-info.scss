@@ -1,5 +1,5 @@
 .company-info {
-    padding: 70px 0;
+    padding: 70px 35px;
     min-height: 856px;
 
     background: linear-gradient(0deg, 
@@ -33,22 +33,4 @@
     font-size: 14px;
     text-align: center;
     line-height: 142.857%;
-}
-
-.company-info__loc-info {
-    align-self: flex-end;
-}
-
-.company-info__loc-list {
-    display: flex;
-    column-gap: 16px;
-}
-
-.company-info__loc-item {
-    display: flex;
-    column-gap: 3px;
-}
-
-.companty-info__loc-text {
-    font-size: 12px;
 }

@@ -206,7 +206,7 @@ a:hover {
 }
 
 .company-info {
-  padding: 70px 0;
+  padding: 70px 35px;
   min-height: 856px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(18.78%, #000), color-stop(98.53%, rgba(0, 0, 0, 0))), url("./../img/company-info/company-info-bg.jpg") center/cover no-repeat, lightgray 100%/cover no-repeat;
   background: linear-gradient(0deg, #000 18.78%, rgba(0, 0, 0, 0) 98.53%), url("./../img/company-info/company-info-bg.jpg") center/cover no-repeat, lightgray 100%/cover no-repeat;
@@ -245,12 +245,12 @@ a:hover {
   line-height: 142.857%;
 }
 
-.company-info__loc-info {
+.location {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.company-info__loc-list {
+.location__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +259,7 @@ a:hover {
           column-gap: 16px;
 }
 
-.company-info__loc-item {
+.location__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +268,7 @@ a:hover {
           column-gap: 3px;
 }
 
-.companty-info__loc-text {
+.location__text {
   font-size: 12px;
 }
 
@@ -351,4 +351,33 @@ a:hover {
   width: 32px;
   height: 32px;
   background-image: url("./../img/cards/icon.svg");
+}
+
+.sunset {
+  padding: 40px 35px;
+  background: url("./../img/sunset/sunset-bg.jpg") center/cover no-repeat;
+  min-height: 600px;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.sunset__location {
+  justify-self: end;
+}
+
+.sunset__title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sunset__text {
+  color: #C0C0C0;
+  font-size: 14px;
+  line-height: 142.857%;
 }

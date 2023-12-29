@@ -1,0 +1,17 @@
+.location {
+    align-self: flex-end;
+}
+
+.location__list {
+    display: flex;
+    column-gap: 16px;
+}
+
+.location__item {
+    display: flex;
+    column-gap: 3px;
+}
+
+.location__text {
+    font-size: 12px;
+}
