@@ -487,3 +487,29 @@ a:hover {
   font-size: 14px;
   line-height: 142.857%;
 }
+
+.clients {
+  padding: 113px 0 169px;
+}
+
+.clients__title {
+  margin: 0 0 15px 0;
+}
+
+.clients__text {
+  color: #C0C0C0;
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 110px 0;
+}
+
+.clients__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
