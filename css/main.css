@@ -458,3 +458,32 @@ a:hover {
   bottom: 45px;
   right: 40px;
 }
+
+.leafs {
+  padding: 40px 35px;
+  background: url("./../img/leafs/leafs-bg.jpg") center/cover no-repeat;
+  min-height: 600px;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.leafs__location {
+  justify-self: end;
+}
+
+.leafs__title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.leafs__text {
+  color: #C0C0C0;
+  font-size: 14px;
+  line-height: 142.857%;
+}
