@@ -513,3 +513,32 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.star-fall {
+  padding: 40px 35px;
+  background: url("./../img/star-fall/star-fall-bg.jpg") center/cover no-repeat;
+  min-height: 600px;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.star-fall__location {
+  justify-self: end;
+}
+
+.star-fall__title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.star-fall__text {
+  color: #C0C0C0;
+  font-size: 14px;
+  line-height: 142.857%;
+}
