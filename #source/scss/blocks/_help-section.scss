@@ -1,0 +1,44 @@
+.help-section {
+    padding: 110px 0;
+}
+
+.help-section__title {
+    margin: 0 0 15px 0;
+}
+
+.help-section__text {
+    color: $muted;
+    text-align: center;
+    font-size: 24px;
+
+    margin: 0 0 22px 0;
+}
+
+.help-section__btn {
+    padding: 8px 10px 8px 42px;
+
+    display: block;
+    margin: 0 auto;
+
+    position: relative;
+
+    color: $black;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+
+    background-color: $white;
+    border-radius: 14px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 4px;
+        left: 4px;
+
+        width: 32px;
+        height: 32px;
+        
+        background-image: url('./../img/buttons/icon.svg');
+    }
+}
