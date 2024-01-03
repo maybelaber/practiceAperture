@@ -12,3 +12,17 @@
     align-items: center;
     column-gap: 30px;
 }
+
+.header__nav {
+    @include mediaTablet {
+        display: none;
+    }
+}
+
+.header__nav-btn {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+    }
+}
