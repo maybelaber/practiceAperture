@@ -59,10 +59,18 @@ a {
     font-size: 54px;
     line-height: 110%;
     text-align: center;
+
+    @include mediaTablet {
+        font-size: 40px;
+    }
 }
 
 .title-2 {
     text-align: center;
     font-size: 40px;
     line-height: 105%;
+
+    @include mediaTablet {
+        font-size: 32px;
+    }
 }

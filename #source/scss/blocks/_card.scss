@@ -3,10 +3,21 @@
     position: relative;
 
     overflow: hidden;
+
+    @include mediaTablet {
+        min-height: 500px;
+    }
 }
 
 .card__img {
     transition: all 0.2s ease-in;
+    
+    height: 100%;
+    
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .card:hover .card__img {

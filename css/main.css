@@ -151,11 +151,21 @@ a:hover {
   line-height: 110%;
   text-align: center;
 }
+@media screen and (max-width: 931px) {
+  .title-1 {
+    font-size: 40px;
+  }
+}
 
 .title-2 {
   text-align: center;
   font-size: 40px;
   line-height: 105%;
+}
+@media screen and (max-width: 931px) {
+  .title-2 {
+    font-size: 32px;
+  }
 }
 
 .header {
@@ -181,7 +191,7 @@ a:hover {
           column-gap: 30px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 931px) {
   .header__nav {
     display: none;
   }
@@ -190,7 +200,7 @@ a:hover {
 .header__nav-btn {
   display: none;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 931px) {
   .header__nav-btn {
     display: block;
   }
@@ -315,6 +325,12 @@ a:hover {
           flex-direction: column;
   row-gap: 14px;
 }
+@media screen and (max-width: 931px) {
+  .company-info {
+    padding: 30px 0;
+    min-height: 600px;
+  }
+}
 
 .company-info__type {
   color: #C0C0C0;
@@ -333,11 +349,18 @@ a:hover {
   font-size: 14px;
   text-align: center;
   line-height: 142.857%;
+  max-width: 580px;
 }
 
 .company-info__location {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+@media screen and (max-width: 931px) {
+  .company-info__location {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 }
 
 .location__list {
@@ -347,6 +370,11 @@ a:hover {
   -webkit-column-gap: 16px;
      -moz-column-gap: 16px;
           column-gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .location__item {
@@ -365,6 +393,11 @@ a:hover {
 .services {
   padding: 110px 0 100px;
 }
+@media screen and (max-width: 931px) {
+  .services {
+    padding: 80px 0 40px;
+  }
+}
 
 .services__title {
   margin: 0 0 15px 0;
@@ -376,6 +409,12 @@ a:hover {
   font-size: 23px;
   margin: 0 0 42px 0;
 }
+@media screen and (max-width: 931px) {
+  .services__text {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+  }
+}
 
 .services__cards {
   display: grid;
@@ -385,16 +424,32 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
+@media screen and (max-width: 931px) {
+  .services__cards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
 
 .card {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 931px) {
+  .card {
+    min-height: 500px;
+  }
+}
 
 .card__img {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  height: 100%;
+}
+.card__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card:hover .card__img {
@@ -457,9 +512,33 @@ a:hover {
       -ms-flex-align: end;
           align-items: end;
 }
+@media screen and (max-width: 931px) {
+  .sunset {
+    padding: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
+}
 
 .sunset__location {
   justify-self: end;
+}
+@media screen and (max-width: 931px) {
+  .sunset__location {
+    justify-self: center;
+  }
 }
 
 .sunset__title {
@@ -472,6 +551,14 @@ a:hover {
   color: #C0C0C0;
   font-size: 14px;
   line-height: 142.857%;
+  max-width: 298px;
+}
+
+@media screen and (max-width: 931px) {
+  .sunset__title,
+  .sunset__text {
+    text-align: center;
+  }
 }
 
 .tools {
@@ -480,13 +567,30 @@ a:hover {
   display: flex;
   min-height: 540px;
 }
+@media screen and (max-width: 931px) {
+  .tools {
+    padding: 50px 0 0 0;
+    min-height: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+}
 
 .tools__content {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50% 0 0px;
-          flex: 50% 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   margin: auto 0;
   padding: 0 85px;
+}
+@media screen and (max-width: 931px) {
+  .tools__content {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .tools__subtitle {
@@ -500,6 +604,11 @@ a:hover {
   color: #fff;
   font-size: 28px;
   margin: 0 0 5px 0;
+}
+@media screen and (max-width: 931px) {
+  .tools__title {
+    font-size: 24px;
+  }
 }
 
 .tools__text {
@@ -529,10 +638,12 @@ a:hover {
 }
 
 .tools__img-block {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50% 0 0px;
-          flex: 50% 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  overflow-x: hidden;
   position: relative;
+  padding: 0 0 300px 0;
 }
 
 .tools__img img {
@@ -546,9 +657,18 @@ a:hover {
 }
 
 .tools__location {
+  width: 249px;
   position: absolute;
   bottom: 45px;
   right: 40px;
+}
+@media screen and (max-width: 931px) {
+  .tools__location {
+    bottom: 15px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
 }
 
 .leafs {

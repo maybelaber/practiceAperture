@@ -1,6 +1,8 @@
 .location__list {
     display: flex;
     column-gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .location__item {

@@ -2,12 +2,25 @@
     display: flex;
 
     min-height: 540px;
+
+    @include mediaTablet{
+        padding: 50px 0 0 0;
+        min-height: unset;
+
+        flex-direction: column;
+        row-gap: 30px
+    }
 }
 
 .tools__content {
-    flex: 50% 0 0;
+    flex: 0 0 50%;
     margin: auto 0;
     padding: 0 85px;
+
+    @include mediaTablet {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 .tools__subtitle {
@@ -22,6 +35,10 @@
     font-size: 28px;
 
     margin: 0 0 5px 0;
+
+    @include mediaTablet {
+        font-size: 24px;
+    }
 }
 
 .tools__text {
@@ -59,12 +76,16 @@
 }
 
 .tools__img-block {
-    flex: 50% 0 0;
+    flex: 0 0 50%;
+
+    overflow-x: hidden;
 
     position: relative;
+    padding: 0 0 300px 0;
 }
 
 .tools__img img {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -74,7 +95,16 @@
 }
 
 .tools__location {
+    width: 249px;
+    
     position: absolute;
     bottom: 45px;
     right: 40px;
+
+    @include mediaTablet {
+        bottom: 15px;
+
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
