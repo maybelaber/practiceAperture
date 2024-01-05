@@ -569,7 +569,7 @@ a:hover {
 }
 @media screen and (max-width: 931px) {
   .tools {
-    padding: 50px 0 0 0;
+    padding: 80px 0 0;
     min-height: unset;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -683,9 +683,33 @@ a:hover {
       -ms-flex-align: end;
           align-items: end;
 }
+@media screen and (max-width: 931px) {
+  .leafs {
+    padding: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
+}
 
 .leafs__location {
   justify-self: end;
+}
+@media screen and (max-width: 931px) {
+  .leafs__location {
+    justify-self: center;
+  }
 }
 
 .leafs__title {
@@ -700,12 +724,29 @@ a:hover {
   line-height: 142.857%;
 }
 
+@media screen and (max-width: 931px) {
+  .leafs__title,
+  .leafs__text {
+    text-align: center;
+  }
+}
+
 .clients {
   padding: 113px 0 169px;
+}
+@media screen and (max-width: 931px) {
+  .clients {
+    padding: 30px 0;
+  }
 }
 
 .clients__title {
   margin: 0 0 15px 0;
+}
+@media screen and (max-width: 931px) {
+  .clients__title {
+    margin: 0 0 8px 0;
+  }
 }
 
 .clients__text {
@@ -713,6 +754,12 @@ a:hover {
   text-align: center;
   font-size: 24px;
   margin: 0 0 110px 0;
+}
+@media screen and (max-width: 931px) {
+  .clients__text {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+  }
 }
 
 .clients__row {
@@ -724,6 +771,12 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.clients__icon {
+  padding: 20px;
 }
 
 .star-fall {
@@ -738,9 +791,33 @@ a:hover {
       -ms-flex-align: end;
           align-items: end;
 }
+@media screen and (max-width: 931px) {
+  .star-fall {
+    padding: 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
+}
 
 .star-fall__location {
   justify-self: end;
+}
+@media screen and (max-width: 931px) {
+  .star-fall__location {
+    justify-self: center;
+  }
 }
 
 .star-fall__title {
@@ -755,8 +832,20 @@ a:hover {
   line-height: 142.857%;
 }
 
+@media screen and (max-width: 931px) {
+  .star-fall__title,
+  .star-fall__text {
+    text-align: center;
+  }
+}
+
 .help-section {
   padding: 110px 0;
+}
+@media screen and (max-width: 931px) {
+  .help-section {
+    padding: 40px 0;
+  }
 }
 
 .help-section__title {
@@ -768,6 +857,11 @@ a:hover {
   text-align: center;
   font-size: 24px;
   margin: 0 0 22px 0;
+}
+@media screen and (max-width: 931px) {
+  .help-section__text {
+    font-size: 20px;
+  }
 }
 
 .help-section__btn {

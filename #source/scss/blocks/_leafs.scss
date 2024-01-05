@@ -7,10 +7,24 @@
     display: grid;
     justify-content: end;
     align-items: end;
+
+    @include mediaTablet {
+        padding: 40px 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
 }
 
 .leafs__location {
     justify-self: end;
+
+    @include mediaTablet {
+        justify-self: center;
+    }
 }
 
 .leafs__title {
@@ -23,4 +37,11 @@
     color: $muted;
     font-size: 14px;
     line-height: 142.857%;
+}
+
+.leafs__title,
+.leafs__text {
+    @include mediaTablet {
+        text-align: center;
+    }
 }

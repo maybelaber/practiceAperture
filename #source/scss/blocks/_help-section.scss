@@ -1,5 +1,9 @@
 .help-section {
     padding: 110px 0;
+
+    @include mediaTablet {
+        padding: 40px 0;
+    }
 }
 
 .help-section__title {
@@ -12,6 +16,10 @@
     font-size: 24px;
 
     margin: 0 0 22px 0;
+
+    @include mediaTablet {
+        font-size: 20px;
+    }
 }
 
 .help-section__btn {
