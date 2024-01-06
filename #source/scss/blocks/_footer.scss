@@ -2,6 +2,10 @@
     flex: 0 0 auto;
 
     padding: 100px 0;
+
+    @include mediaTablet {
+        padding: 50px 0;
+    }
 }
 
 .footer__text {
@@ -16,6 +20,10 @@
     text-transform: uppercase;
 
     margin: 0 0 20px 0;
+
+    @include mediaTablet {
+        margin: 0 0 10px 0;
+    }
 }
 
 /* nav-block */
@@ -24,15 +32,31 @@
 
     display: flex;
     justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+
+
 }
 
 .footer__logo {
     margin: 0 0 20px 0;
+
+    @include mediaTablet {
+        margin: 0 0 10px 0;
+    }
 }
 
 .footer__navigation {
     display: flex;
+    justify-content: space-between;
     column-gap: 39px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+
+    @include mediaTablet {
+        width: 100%;
+    }
 }
 
 .footer__nav-title {
@@ -61,8 +85,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    row-gap: 20px;
 
     position: relative;
+
+    @include mediaTablet {
+        flex-direction: column;
+        align-items: unset;
+    }
 
     &:before {
         content: "";
@@ -91,6 +121,12 @@
 
 .footer__form {
     width: 39.2%;
+
+    @include mediaTablet {
+        width: unset;
+        max-width: 458px;
+    }
+    
 }
 
 .footer__input {
@@ -130,9 +166,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 10px;
+
+    @include mediaTablet {
+        padding: 36px 0 0 0;
+    }
 }
 
 .footer__socials {
     display: flex;
     column-gap: 20px;
+}
+
+.footer__socials-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.footer__socials-icon img {
+    width: 100%;
+    height: 100%;
 }
