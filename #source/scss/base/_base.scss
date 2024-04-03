@@ -89,3 +89,15 @@ a {
 .transition-none {
     transition: none !important;
 }
+
+.btn {
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: $white-dark;
+    }
+
+    &--black:hover {
+        background-color: $dark;
+    }
+}

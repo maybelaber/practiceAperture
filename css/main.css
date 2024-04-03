@@ -184,6 +184,17 @@ a:hover {
   transition: none !important;
 }
 
+.btn {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.btn:hover {
+  background-color: #d6d6d6;
+}
+.btn--black:hover {
+  background-color: #181818;
+}
+
 .header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
