@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
-    
+
     padding: 20px 15px;
     position: fixed;
     z-index: 2;
@@ -20,15 +20,22 @@
 
     @include mediaTablet {
         padding: 20.5px 15px;
-        
+
         height: 75px;
-        transition: height 0.4s cubic-bezier(.4,0,.6,1) 80ms; // for future transition
+        transition: height 0.4s cubic-bezier(.4, 0, .6, 1) 80ms;
     }
 }
 
- .header__row--mobile {
+.header__nav-row {
+    display: flex;
+    justify-content: space-between;
+    width: $container-width + 2 * $container-padding;
+    margin: 0 auto;
+}
+
+.header__row--mobile {
     padding: 0;
-    
+
     height: 100vh;
 
     background-color: $dark;
@@ -41,7 +48,7 @@
         opacity: 0;
         visibility: hidden;
         height: 0;
-        
+
         position: fixed;
         top: 20.5px;
         left: 15px;
@@ -73,8 +80,8 @@
         visibility: visible;
         transition-delay: calc(0.2s + 1 * 0.02s);
         transition-duration: 0.24s;
-        transition-property: opacity,visibility;
-        transition-timing-function: cubic-bezier(.4,0,.6,1), cubic-bezier(.4,0,.6,1);
+        transition-property: opacity, visibility;
+        transition-timing-function: cubic-bezier(.4, 0, .6, 1), cubic-bezier(.4, 0, .6, 1);
 
         &:nth-child(1) {
             transition-delay: calc(0.2s + 1 * 0.04s);
@@ -114,8 +121,8 @@
     opacity: 1;
     visibility: visible;
 
-    transition: 
-        opacity .24s cubic-bezier(.4,0,.6,1), 
+    transition:
+        opacity .24s cubic-bezier(.4, 0, .6, 1),
         visibility .24s;
 
     display: flex;
@@ -142,7 +149,7 @@
         visibility: hidden;
         opacity: 0;
     }
-} 
+}
 
 .header__nav-btn {
     display: none;

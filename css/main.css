@@ -138,10 +138,12 @@ a:hover {
   /* Keep the layout */
   position: absolute;
   /* Remove any visible trace (e.g. background color) */
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%); /* browsers in the future */
+          clip-path: inset(50%);
+  /* browsers in the future */
   /* Prevent the screen reader to skip spaces between words */
   white-space: nowrap;
 }
@@ -170,6 +172,16 @@ a:hover {
 
 .no-scroll {
   overflow-y: hidden;
+}
+
+.scroll-y {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.transition-none {
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .header {
@@ -204,6 +216,17 @@ a:hover {
     -webkit-transition: height 0.4s cubic-bezier(0.4, 0, 0.6, 1) 80ms;
     transition: height 0.4s cubic-bezier(0.4, 0, 0.6, 1) 80ms;
   }
+}
+
+.header__nav-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1198px;
+  margin: 0 auto;
 }
 
 .header__row--mobile {

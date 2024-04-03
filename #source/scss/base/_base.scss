@@ -29,7 +29,7 @@ a {
 .container {
     padding: 0 15px;
 
-    max-width: 1198px;
+    max-width: $container-width + 2 * $container-padding;
     margin: 0 auto;
 }
 
@@ -39,20 +39,22 @@ a {
 
 .visually-hidden {
     /* Contain text within 1px box */
-	height: 1px;
-	overflow: hidden;
-	width: 1px;
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
 
-	/* Keep the layout */
-	position: absolute;
+    /* Keep the layout */
+    position: absolute;
 
-	/* Remove any visible trace (e.g. background color) */
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%); /* browsers in the future */
+    /* Remove any visible trace (e.g. background color) */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    /* browsers in the future */
 
-	/* Prevent the screen reader to skip spaces between words */
-	white-space: nowrap;
+    /* Prevent the screen reader to skip spaces between words */
+    white-space: nowrap;
 }
 
 .title-1 {
@@ -77,4 +79,13 @@ a {
 
 .no-scroll {
     overflow-y: hidden;
+}
+
+.scroll-y {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.transition-none {
+    transition: none !important;
 }
